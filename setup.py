@@ -27,7 +27,7 @@ def clone_tree():
         print("### Cloning or copy tree")
         Path(git_clone_dir).mkdir(exist_ok=True, parents=True)
 
-        if not  config["repo"].startswith("https:") and not  config["repo"].startswith("git@"):
+        if not  config["repo"].startswith("http") and not  config["repo"].startswith("git@"):
             print("### copy local tree")
             return copy_local_file(config["repo"]+"/.",git_clone_dir)
 
@@ -213,7 +213,7 @@ def remove_feeds():
         os.chdir(base_dir)
 
 base_dir = Path.cwd().absolute()
-config = "config-19.x.yml"
+config = "configs/config-19.x.yml"
 profiles = os.getcwd() + "/" + "profiles"
 openwrt = "openwrt"
 git_clone_dir = ""

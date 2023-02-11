@@ -450,7 +450,7 @@ make package/feeds/myfeeds/package1 V=s
 ```
 
 # Note
-1. If you gcc version is 10, you will encounter some error, like this:
+1. If your gcc version is 10, you will encounter some error, like this:
 ```
 /usr/bin/ld: scripts/dtc/dtc-parser.tab.o:(.bss+0x10): multiple definition of `yylloc'; scripts/dtc/dtc-lexer.lex.o:(.bss+0x0): first defined here
 collect2: error：ld returned 1 exit status.
